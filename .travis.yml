@@ -12,6 +12,5 @@ before_install:
 
 install:
   - npm install
-
-after_install:
   - ng build --prod
+
