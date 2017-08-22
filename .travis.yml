@@ -1,0 +1,17 @@
+language: node_js
+sudo: false
+node_js:
+  - '6'
+
+
+before_install:
+  - npm install npm@5 -g
+  - npm cache verify
+  - npm prune
+  - npm update
+
+install:
+  - npm install
+
+after_install:
+  - ng buil --prod
