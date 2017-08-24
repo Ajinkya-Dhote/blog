@@ -5,6 +5,8 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdToolbarModule, MdCardModule, MdButtonModule, MdListModule, MdIconModule, MdChipsModule } from '@angular/material';
 import { HttpModule } from '@angular/http';
+import { ShareDataServiceService } from './share-data-service.service';
+import { DataResolverService } from './data-resolver.service';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -41,7 +43,7 @@ import { ContentComponent } from './content/content.component';
       }
     ])
   ],
-  providers: [],
+  providers: [ShareDataServiceService, DataResolverService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

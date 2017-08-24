@@ -12,7 +12,7 @@
       </p>
     </md-card-content>
     <md-card-actions>
-      <button md-button  [routerLink]="['/content']" [queryParams]={post: post}">MORE</button>
+      <button md-button (click)="goToPostDetails(post.id)">MORE</button>
       <button md-button>SHARE</button>
       <i class="fa fa-heart-o" aria-hidden="true"></i>
     </md-card-actions>
