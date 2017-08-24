@@ -1,7 +1,7 @@
 export interface PostInterface {
     id: string;
     title: string;
-    subtitlt: string;
+    subtitle: string;
     avatar: string;
     intro: string;
 }
