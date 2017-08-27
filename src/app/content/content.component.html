@@ -1,5 +1,8 @@
-<div *ngIf="loadPage">
-<md-toolbar>
+<div fxLayout="column" *ngIf="loadPage">
+<md-toolbar fxFlex class="post-title">
   <span>{{ post.title }}</span>
 </md-toolbar>
+<md-card fxFlex >
+  <p [innerHTML]="post.content"></p>
+</md-card>
 </div>
