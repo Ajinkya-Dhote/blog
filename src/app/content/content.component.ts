@@ -3,6 +3,7 @@ import { PostInterface } from '../post/post-interface';
 import { Router, ActivatedRoute } from '@angular/router';
 import { JsonPipe } from '@angular/common';
 import { ShareDataServiceService } from '../share-data-service.service';
+import {MdDialog, MdDialogRef} from '@angular/material';
 
 @Component({
   selector: 'app-content',

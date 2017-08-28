@@ -3,6 +3,19 @@
   <span>{{ post.title }}</span>
 </md-toolbar>
 <md-card fxFlex >
-  <p [innerHTML]="post.content"></p>
+    <md-tab-group>
+      
+          <md-tab *ngFor="let tab of post.content">
+              <ng-template md-tab-label>
+                  {{ tab.tab }}
+                </ng-template>
+                <p [innerHTML]="tab.content"></p>
+          </md-tab>
+      
+        <!-- <md-tab  label="'tab.tab'">{{tab.content}}</md-tab> -->
+        <!-- <md-tab label="Tab 2">Content 2</md-tab> -->
+      </md-tab-group>
+      
+  <!-- <p [innerHTML]="post.content"></p> -->
 </md-card>
 </div>
