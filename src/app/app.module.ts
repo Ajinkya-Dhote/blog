@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdToolbarModule, MdCardModule, MdButtonModule, MdListModule, MdIconModule, MdChipsModule } from '@angular/material';
+import { MdToolbarModule, MdCardModule, MdButtonModule, MdDialogModule, MdListModule, MdIconModule, MdChipsModule, MdTabsModule } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { ShareDataServiceService } from './share-data-service.service';
 import { DataResolverService } from './data-resolver.service';
 import 'hammerjs';
 
-import { AppComponent } from './app.component';
+import { AppComponent, UserInfoDialog } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PostComponent } from './post/post.component';
 import { ContentComponent } from './content/content.component';
@@ -17,6 +17,7 @@ import { ContentComponent } from './content/content.component';
 @NgModule({
   declarations: [
     AppComponent,
+    UserInfoDialog,
     HomeComponent,
     PostComponent,
     ContentComponent
@@ -32,6 +33,8 @@ import { ContentComponent } from './content/content.component';
     MdIconModule,
     MdChipsModule,
     HttpModule,
+    MdDialogModule,
+    MdTabsModule,
     RouterModule.forRoot([
       {
         path: 'home',
@@ -44,6 +47,6 @@ import { ContentComponent } from './content/content.component';
     ])
   ],
   providers: [ShareDataServiceService, DataResolverService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, UserInfoDialog]
 })
 export class AppModule { }

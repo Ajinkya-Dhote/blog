@@ -7,17 +7,22 @@
             <!-- This fills the remaining space of the current row -->
             <span class="example-fill-remaining-space"></span>
           
-            <span>Right Aligned Text</span>
+            <span (click)="openDialog()"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
           </md-toolbar>
-    <div fxFlex style="overflow: auto">
+    <div fxFlex="80" style="overflow: auto">
       <router-outlet ></router-outlet>
+     
     </div>
-    <div fxFlex="5" class="footer">
-      <div fxLayout="row" fxLayoutAlign="end">
+    <div fxFlex class="footer">
+      
+<div fxLayout="column" fxLayoutAlign="center center" >
+      <div fxLayout="row" fxLayoutAlign="center">
           <p fxFlex>The application is being developed and maintained at Github</p>
           <i fxFlex="3" fxFlex.xs="10" class="fa fa-github fa-2x" aria-hidden="true"></i>
-          <i fxFlex="3" fxFlex.xs="10" class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
       </div>
-    </div>
 </div>
+    </div>
+    <user-info-dialog *ngIf="false"></user-info-dialog>
+</div>
+
 </div>
