@@ -5,7 +5,7 @@
         {
             "id": "1",
             "title": "Virtualization",
-            "subtitle": "Build And Test Your App on Open Source",
+            "subtitle": "The Building Block for Cloud Computing",
             "avatar": "./assets/images/1/virtualization.png",
             "intro": "Virtualization technology enables Cloud providers to efficiently use their computing services and resources. Even if the benefits in terms of performance, maintenance, and cost are evident, however, virtualization has also been exploited by attackers to devise new ways to compromise a system.",
             "content": [
@@ -22,24 +22,6 @@
                     "content": "<ul><li><em>Security Abstraction : </em></li><p> Detecting Malware at hypervisor level to enhance security of cloud in virtual environment.</p> <li><em>Hosted/Virtual/Cloud Desktops :</em></li> <p> People very realized that VDI isn’t as easy as it may seem. Numerous underlying components can make this technology a bit cumbersome</p> <li><em> Network Virtualization (SDN and NFV) : </em></li> <p>Also known as software defined networks (SDN), network virtualization has allowed the administrator much greater control over a network infrastructure.User Virtualization. With IT consumerization and mobility making a presence, more organizations have been looking for ways to abstract the user layer from devices, applications and end-points</p></ul>"
                 }
                 ]
-        },
-        {
-            "id": "2",
-            "title": "Travis CI",
-            "subtitle": "Build And Test Your App on Open Source",
-            "avatar": "../../assets/images/travis.png",
-            "intro": "Travis CI makes working in a team for a software project easier with automated builds. These builds are triggered automatically when each developer checks in their code to the repository. In this article, we will go through how we can integrate Travis CI easily with our project, which is hosted on Github. With automation, notification and testing in place, we can focus on our coding and creating, while Travis CI does the hard work of continuous integration!",
-            "content": [
-                {
-                    "tab": "Overview",
-                    "content": "this is an overview"
-                },
-                {
-                    "tab": "Example",
-                    "content": "this is an example"
-                }
-                
-            ]
         }
     ]
 }

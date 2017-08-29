@@ -43,6 +43,15 @@ import { ContentComponent } from './content/content.component';
       {
         path: 'content',
         component: ContentComponent
+      },
+      {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+      },
+      {
+        path: '**',
+        redirectTo: '/home'
       }
     ])
   ],
